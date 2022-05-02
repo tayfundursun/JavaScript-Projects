@@ -26,7 +26,7 @@ main {
     border-radius: 30px;
     background-color: var(--dark-blue);
     width: 400px;
-    height: 360px;
+    height: 380px;
     padding: 50px;
 }
 
@@ -36,26 +36,23 @@ img {
     border-radius: 50%;
 }
 
-h1 {
-    color: var(--white);
-    margin-top: 35px;
-}
+h1 { color: var(--white); margin-top: 35px; }
 
-p {
+#p-first {
     width: 90%;
     text-align: justify;
     color: var(--light-grey);
     margin-top: 15px;
 }
 
-ul {
+#btn-div {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
 }
 
-li {
-    width: 20px;
+.btn {
+    width: 64px;
     display: inline;
     padding: 20px;
     border-radius: 50%;
@@ -64,8 +61,38 @@ li {
     color: var(--light-grey);
     text-align: center;
     font-size: large;
+    border: none;
+    transition: 0.5s;
 }
 
-button {
+#submit {
+    margin-top: 10%;
+    padding: 15px 0 15px 0;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    color: var(--white);
+    background-color: var(--orange);
+    font-weight: 700;
+    width: 100%;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
 
+#warning {
+    color: red;
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+
+.hidden { display: none; }
+
+.btn:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.btn:focus {
+    background-color: var(--light-grey);
+    color: var(--white);
 }
