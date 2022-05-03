@@ -1,25 +1,25 @@
 let btnDOM = document.querySelectorAll(".btn");
 let submitDOM = document.querySelector("#submit");
+let ratingDOM = document.querySelector("#rating");
 let selectedValue;
 
-btnDOM.forEach(item => {
-    item.addEventListener("click", function(){
-        selectedValue = item.value;
-
-        console.log(selectedValue, "---" , "btn clicked.");
+btnDOM.forEach(btn => {
+    btn.addEventListener("click", function(){
+        selectedValue = btn.value;
     });
 });
 
-
 submitDOM.addEventListener("click", function() {
     if(selectedValue === undefined){
-
-        console.log("warning");
         document.querySelector("#warning").classList.remove("hidden");
     } else {
-        
-
-        console.log("success");
+        setTimeout( 
+            function() {
+                document.querySelector("#rating-section").classList.add("hidden");
+                document.querySelector("#thankyou-section").classList.remove("hidden");
+                
+                ratingDOM.innerHTML = (`You selected ${selectedValue} out of 5`);
+            } 
+        , 350)      
     }
 });
-

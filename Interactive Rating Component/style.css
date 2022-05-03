@@ -30,7 +30,7 @@ main {
     padding: 50px;
 }
 
-img {
+#star {
     background-color: hsl(213, 19%, 24%);
     padding: 12px;
     border-radius: 50%;
@@ -53,7 +53,6 @@ h1 { color: var(--white); margin-top: 35px; }
 
 .btn {
     width: 64px;
-    display: inline;
     padding: 20px;
     border-radius: 50%;
     background-color: hsl(213, 19%, 24%);
@@ -68,6 +67,7 @@ h1 { color: var(--white); margin-top: 35px; }
 #submit {
     margin-top: 10%;
     padding: 15px 0 15px 0;
+    box-shadow: 0 6px hsl(25, 69%, 49%);
     text-align: center;
     border-radius: 20px;
     border: none;
@@ -77,6 +77,19 @@ h1 { color: var(--white); margin-top: 35px; }
     width: 100%;
     letter-spacing: 2px;
     cursor: pointer;
+    transition: 0.4s;
+}
+
+#submit:hover {
+    color: var(--orange);
+    background-color: var(--white);
+    box-shadow: 0 6px #ccc8c8;
+}
+
+#submit:active {
+    background-color: var(--white);
+    box-shadow: 0 3px #ccc8c8;
+    transform: translateY(4px);
 }
 
 #warning {
@@ -95,4 +108,60 @@ h1 { color: var(--white); margin-top: 35px; }
 .btn:focus {
     background-color: var(--light-grey);
     color: var(--white);
+}
+
+#thankyou-img {
+    display: block;
+    margin: auto;
+}
+
+#rating {
+    width: max-content;
+    margin: auto;
+    margin-top: 40px;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: hsl(213, 19%, 24%);
+    padding: 10px 25px;
+    color: var(--orange);
+}
+
+#thankyou-section > h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+#appreciate {
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    color: var(--light-grey);
+    line-height: 25px;
+}
+
+@media (max-width: 900px) {
+    #p-first {
+        width: 100%;
+    }
+
+    main {
+        width: 375px;
+        margin: 0 40px;
+        padding: 50px 20px;
+    }
+
+    #btn-div {
+        justify-content: space-around;
+        width: 80%;
+        margin: auto;
+        margin-top: 40px;
+    }
+    
+    .btn {
+        width: auto;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
 }

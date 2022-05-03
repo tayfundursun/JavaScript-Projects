@@ -11,26 +11,41 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
 
-    <title>Interactive rating component</title> 
+    <title>Interactive Rating Component</title> 
   </head>
 
   <body>
     <main>
-      <img src="./images/icon-star.svg" alt="icon-star">
-      <h1>How did we do?</h1>
-      <p id="p-first">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering! </p>
-      
-      <div id="btn-div">
-        <input class="btn" id="1" type="button" value="1">
-        <input class="btn" id="2" type="button" value="2">
-        <input class="btn" id="3" type="button" value="3">
-        <input class="btn" id="4" type="button" value="4">
-        <input class="btn" id="5" type="button" value="5">
-      </div>
+      <section id="rating-section">
+        <img id="star" src="./images/icon-star.svg" alt="icon-star">
+        <h1>How did we do?</h1>
+        <p id="p-first">
+          Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+        </p>
+        
+        <div id="btn-div">
+          <input class="btn" type="button" value="1">
+          <input class="btn" type="button" value="2">
+          <input class="btn" type="button" value="3">
+          <input class="btn" type="button" value="4">
+          <input class="btn" type="button" value="5">
+        </div>
 
-      <input id="submit" type="button" value="SUBMIT">
-      
-      <p id="warning" class="hidden">Please select one!</p>
+        <input id="submit" type="button" value="SUBMIT">
+        
+        <p id="warning" class="hidden">Please select a rating!</p>
+      </section>
+    
+      <section id="thankyou-section" class="hidden">
+        <img id="thankyou-img" src="./images/illustration-thank-you.svg" alt="thankyou-img">
+
+        <p id="rating"></p>
+
+        <h1>Thank you!</h1>
+        <p id="appreciate">
+          We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+        </p>
+      </section>
     </main>
 
     <script src="app.js"></script>
