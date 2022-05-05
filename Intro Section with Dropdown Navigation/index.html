@@ -4,13 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet"> <!-- Google Fonts --- Epilouge -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    
-    <title>Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css">
 
+    <title>Intro section with dropdown navigation</title>
   </head>
 
   <body>
-    
+    <!-- NAVBAR - START -->
+    <nav>
+      <div id="navigation-div">
+        <img src="./images/logo.svg" alt="snap-logo">
+
+        <div class="hover" class="dropdown-btn">
+          <span>Features</span>
+          <img src="./images/icon-arrow-down.svg" alt="arrow-down">
+        </div>
+        
+        <div class="hover" class="dropdown-btn">
+          <span>Company</span>
+          <img src="./images/icon-arrow-down.svg" alt="arrow-down">
+        </div>
+
+        <a class="hover" href="#">Careers</a>
+        <a class="hover" href="#">About</a>
+      </div>
+
+      <div id="login-div">
+        <a id="login" class="hover" href="#">Login</a>
+        <a id="register" class="hover" href="#">Register</a>
+      </div>
+    </nav>
+    <!-- NAVBAR - END -->
+
+    <!-- MAIN - START -->
+    <main>
+      <section id="content">
+        <h1 id="header">Make <br> remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        
+        <a id="learn-more" href="#">Learn more</a>
+
+        <ul>
+          <li>
+            <img src="./images/client-audiophile.svg" alt="client-audiophile">
+          </li>
+          <li>
+            <img src="./images/client-databiz.svg" alt="client-databiz">
+          </li>
+          <li>
+            <img src="./images/client-maker.svg" alt="client-maker">
+          </li>
+          <li>
+            <img src="./images/client-meet.svg" alt="client-meet">
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <img  id="hero-img" src="./images/image-hero-desktop.png" alt="image-hero-desktop">
+      </section>
+    </main>
+    <!-- MAIN - END -->
+
+    <script src="app.js"></script>
   </body>
 </html>
