@@ -19,15 +19,44 @@
       <div id="navigation-div">
         <img src="./images/logo.svg" alt="snap-logo">
 
-        <div class="hover" class="dropdown-btn">
+        <div id="features" class="hover" class="dropdown-btn">
           <span>Features</span>
-          <img src="./images/icon-arrow-down.svg" alt="arrow-down">
+          <img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow-down">
+
+          <div id="features-list" class="dropdown-list hidden">
+            <div class="dropdown-menu">
+              <div>
+                <img src="./images/icon-todo.svg" alt="icon-todo">
+                <a href="#">Todo List</a>
+              </div>
+              <div>
+                <img src="./images/icon-calendar.svg" alt="icon-calendar">
+                <a href="#">Calendar</a>
+              </div>
+              <div>
+                <img src="./images/icon-reminders.svg" alt="icon-reminders">
+                <a href="#">Reminders</a>
+              </div>
+              <div>
+                <img src="./images/icon-planning.svg" alt="icon-planning">
+                <a href="#">Planning</a>
+              </div>
+            </div>
+          </div>
         </div>
+
         
-        <div class="hover" class="dropdown-btn">
+        
+        <div id="company" class="hover" class="dropdown-btn">
           <span>Company</span>
           <img src="./images/icon-arrow-down.svg" alt="arrow-down">
         </div>
+
+        <ul id="company-list" class="dropdown-list hidden">
+          <div><a href="#">History</a></div>
+          <div><a href="#">Our Team</a></div>
+          <div><a href="#">Blog</a></div>
+        </ul>
 
         <a class="hover" href="#">Careers</a>
         <a class="hover" href="#">About</a>
@@ -64,12 +93,12 @@
         </ul>
       </section>
 
-      <section>
+      <section id="img-section">
         <img  id="hero-img" src="./images/image-hero-desktop.png" alt="image-hero-desktop">
       </section>
     </main>
     <!-- MAIN - END -->
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
