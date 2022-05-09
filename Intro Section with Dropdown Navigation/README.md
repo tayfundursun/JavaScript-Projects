@@ -31,6 +31,4 @@ Users should be able to:
 - Twitter - [@tayfundursun_](https://www.twitter.com/tayfundursun_)
 
 ## Todo
-- Fix arrow img src
-- Make it mobile responsive 
 - Design mobile menu 
