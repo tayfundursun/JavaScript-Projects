@@ -16,35 +16,32 @@ body {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
     color: var(--medium-gray);
     width: 100%;
 }
+
+#navs { display: flex; }
 
 #features, #company { 
     cursor: pointer; 
     user-select: none;
 }
 
-.hidden { display: none; }
+#logo-img {  margin-right: 4em; }
 
-#navigation-div { display: flex; }
+#navigation-div { display: flex;}
 
 #navigation-div > * { margin-right: 3em; }
 
-.dropdown-btn { 
-    cursor: pointer; 
-}
+.dropdown-btn {  cursor: pointer; }
 
-.dropdown-list {
-    position: relative;
-}
+.dropdown-list { position: relative; }
 
 .dropdown-menu {
     width: 150px;
     position: absolute;
     top: calc(100% + 0.5em);
+    right: 5%;
     padding: 0.75em;
     border-radius: 10px;
     z-index: 1;
@@ -109,6 +106,10 @@ li { display: inline; margin-right: 3em; }
     color: var(--almost-black);
 }
 
+.hover:hover {
+    color: var(--almost-black);
+}
+
 #img-section {
     width: 650px;
     height: auto;
@@ -119,9 +120,15 @@ li { display: inline; margin-right: 3em; }
     height: auto;
 }
 
-#mobile-nav {
-    display: none;
+#mob-view {
+    display: flex;
+    justify-content: space-between;
 }
+
+#mob-ham-menu { display: none; }
+
+.hidden { display: none; }
+.visible { display: flex !important; }
 
 @media (max-width: 1100px) {
     body {
@@ -130,13 +137,36 @@ li { display: inline; margin-right: 3em; }
         margin: 0;
     }
 
-    #navigation-div, #login-div { display: none; }
+    #navigation-div { 
+        flex-direction: column;
+        align-items: flex-end;
+        display: none;
+    }
 
-    #mobile-nav { 
-        width: 100%;
-        display: flex; 
-        margin: 1.5em 1em 0 1em;
+    #navigation-div > * {
+        margin: 0;
+        margin-top: 2em;
+    }
+
+    #login-div > a { margin: 2em 0 0 0; }
+
+    #login-div {
+        display: flex;
         justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    nav {
+        position: fixed;
+    }
+
+    #navs {
+        flex-direction: column;
+        height: min-content;
+        padding: 1em;
+        z-index: 9999;
+        background: white;
     }
 
     main {
@@ -144,6 +174,8 @@ li { display: inline; margin-right: 3em; }
         text-align: center;
         margin: 1em 0;
     }
+
+    #features { z-index: 9999; }
 
     #header {
         margin: 2em 0 1em 0;
@@ -171,7 +203,5 @@ li { display: inline; margin-right: 3em; }
         margin: 0 1em;
     }
 
-    #desktop-nav {
-        display: none;
-    }
+    #mob-ham-menu { display: block; }
 }

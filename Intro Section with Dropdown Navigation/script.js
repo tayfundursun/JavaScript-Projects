@@ -32,3 +32,19 @@ companyDOM.addEventListener("click", event => {
 
     companyLIST.classList.toggle("hidden");
 });
+
+let mobCloseBtnDOM = document.querySelector("#mob-ham-menu");
+let navDOM = document.querySelector("#navigation-div");
+btnBoolean = true;
+
+mobCloseBtnDOM.addEventListener("click", function(){
+    navDOM.classList.toggle("visible");
+
+    if(btnBoolean){
+        mobCloseBtnDOM.src = "./images/icon-close-menu.svg";
+        btnBoolean = false;
+    } else {
+        mobCloseBtnDOM.src = "./images/icon-menu.svg";
+        btnBoolean = true;
+    }
+});
