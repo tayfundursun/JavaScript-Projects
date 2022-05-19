@@ -29,6 +29,3 @@ Users should be able to:
 ## Author
 
 - Twitter - [@tayfundursun_](https://www.twitter.com/tayfundursun_)
-
-## Todo
-- Design mobile menu 
