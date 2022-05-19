@@ -29,9 +29,19 @@ nav {
 
 #logo-img {  margin-right: 4em; }
 
-#navigation-div { display: flex;}
+#navigation-div { 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 
-#navigation-div > * { margin-right: 3em; }
+#nav-buttons {
+    display: flex;
+}
+
+#nav-buttons > * {
+    margin-right: 3em;
+}
 
 .dropdown-btn {  cursor: pointer; }
 
@@ -58,7 +68,9 @@ a {
     color: inherit;
 }
 
-#login { margin-right: 3em; }
+#login { 
+    margin-right: 3em; 
+}
 
 #register {
     padding: 0.7em 1.5em;
@@ -143,7 +155,9 @@ li { display: inline; margin-right: 3em; }
         display: none;
     }
 
-    #navigation-div > * {
+    #nav-buttons { flex-direction: column; }
+
+    #nav-buttons > * {
         margin: 0;
         margin-top: 2em;
     }
@@ -153,7 +167,7 @@ li { display: inline; margin-right: 3em; }
     #login-div {
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
         flex-direction: column;
     }
 
