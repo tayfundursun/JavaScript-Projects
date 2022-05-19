@@ -92,6 +92,8 @@ main {
     justify-content: space-around;
 }
 
+#content > h1, p, a { margin-bottom: 2rem; }
+
 #content > p {
     width: 55%;
     line-height: 30px;
